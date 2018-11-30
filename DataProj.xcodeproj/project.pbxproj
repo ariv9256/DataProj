@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7C9D9B21B1BB9800C1FB04 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C9D9A21B1BB9800C1FB04 /* DataViewController.swift */; };
+		0F7C9D9D21B1BBFB00C1FB04 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C9D9C21B1BBFB00C1FB04 /* BucketItemCell.swift */; };
+		0F7C9DA021B1BC7300C1FB04 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C9D9F21B1BC7300C1FB04 /* BucketItem.swift */; };
+		0F7C9DA221B1BCE200C1FB04 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F7C9DA121B1BCE200C1FB04 /* bucket18.csv */; };
 		0FA144A321AC7D73002298B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA144A221AC7D73002298B0 /* AppDelegate.swift */; };
-		0FA144A521AC7D73002298B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA144A421AC7D73002298B0 /* ViewController.swift */; };
 		0FA144A821AC7D73002298B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA144A621AC7D73002298B0 /* Main.storyboard */; };
 		0FA144AA21AC7D75002298B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA144A921AC7D75002298B0 /* Assets.xcassets */; };
 		0FA144AD21AC7D75002298B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA144AB21AC7D75002298B0 /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F7C9D9A21B1BB9800C1FB04 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		0F7C9D9C21B1BBFB00C1FB04 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		0F7C9D9F21B1BC7300C1FB04 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		0F7C9DA121B1BCE200C1FB04 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
 		0FA1449F21AC7D73002298B0 /* DataProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FA144A221AC7D73002298B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FA144A421AC7D73002298B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0FA144A721AC7D73002298B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FA144A921AC7D75002298B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA144AC21AC7D75002298B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7C9D9E21B1BC0D00C1FB04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F7C9D9F21B1BC7300C1FB04 /* BucketItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0FA1449621AC7D73002298B0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +111,10 @@
 		0FA144A121AC7D73002298B0 /* DataProj */ = {
 			isa = PBXGroup;
 			children = (
-				0FA144A221AC7D73002298B0 /* AppDelegate.swift */,
-				0FA144A421AC7D73002298B0 /* ViewController.swift */,
-				0FA144A621AC7D73002298B0 /* Main.storyboard */,
-				0FA144A921AC7D75002298B0 /* Assets.xcassets */,
-				0FA144AB21AC7D75002298B0 /* LaunchScreen.storyboard */,
-				0FA144AE21AC7D75002298B0 /* Info.plist */,
+				0F7C9D9E21B1BC0D00C1FB04 /* Model */,
+				0FA144D221AC7DE2002298B0 /* Resources */,
+				0FA144D121AC7DD6002298B0 /* Controller */,
+				0FA144D021AC7DB7002298B0 /* View */,
 			);
 			path = DataProj;
 			sourceTree = "<group>";
@@ -123,6 +135,35 @@
 				0FA144C421AC7D75002298B0 /* Info.plist */,
 			);
 			path = DataProjUITests;
+			sourceTree = "<group>";
+		};
+		0FA144D021AC7DB7002298B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FA144A621AC7D73002298B0 /* Main.storyboard */,
+				0FA144AB21AC7D75002298B0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FA144D121AC7DD6002298B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F7C9D9A21B1BB9800C1FB04 /* DataViewController.swift */,
+				0F7C9D9C21B1BBFB00C1FB04 /* BucketItemCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FA144D221AC7DE2002298B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F7C9DA121B1BCE200C1FB04 /* bucket18.csv */,
+				0FA144A221AC7D73002298B0 /* AppDelegate.swift */,
+				0FA144A921AC7D75002298B0 /* Assets.xcassets */,
+				0FA144AE21AC7D75002298B0 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA144AD21AC7D75002298B0 /* LaunchScreen.storyboard in Resources */,
+				0F7C9DA221B1BCE200C1FB04 /* bucket18.csv in Resources */,
 				0FA144AA21AC7D75002298B0 /* Assets.xcassets in Resources */,
 				0FA144A821AC7D73002298B0 /* Main.storyboard in Resources */,
 			);
@@ -256,7 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA144A521AC7D73002298B0 /* ViewController.swift in Sources */,
+				0F7C9DA021B1BC7300C1FB04 /* BucketItem.swift in Sources */,
+				0F7C9D9D21B1BBFB00C1FB04 /* BucketItemCell.swift in Sources */,
+				0F7C9D9B21B1BB9800C1FB04 /* DataViewController.swift in Sources */,
 				0FA144A321AC7D73002298B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
